@@ -8,4 +8,5 @@ typing-extensions
 xgboost
 sklearn
 dill
+flask
 -e .

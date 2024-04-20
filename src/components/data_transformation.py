@@ -1,8 +1,5 @@
 import sys
 from dataclasses import dataclass
-import os
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
 import numpy as np
 import pandas as pd
@@ -13,6 +10,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 from src.exception import CustomException
 from src.logger import logging
+import os
 
 from src.utils import save_object
 
@@ -28,7 +26,7 @@ class DataTransformation:
 
     def get_data_transformer_object(self):
         '''
-        This function si responsible for data transformation
+        This function si responsible for data trnasformation
 
         '''
         try:
